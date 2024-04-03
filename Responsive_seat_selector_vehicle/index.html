@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets Online Booking</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="./assets/images/movie-favicon.png"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="vehicle-container">
+                <label for="vehicle">Select Vehicle</label>
+                <select name="vehicle" id="vehicle">
+                    <option value="750"> 14 Seater</option>
+                    <option value="850"> 11 Seater</option>
+                </select>
+            </div>
+            
+            <div class="seating-container">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat driver" title="Driver's seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="summary">
+                    <p>You have selected <span class="bold" id="count">0</span> seats, total price is KSH <span class="bold" id="total">0</span> </p>
+                </div>
+            </div>
+            <ul class="showcase-container">
+                <li>
+                    <div class="seat sold"></div>
+                    <small>Sold</small>
+                </li>
+                <li>
+                    <div class="seat available"></div>
+                    <small>Available</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
